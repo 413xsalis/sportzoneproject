@@ -17,7 +17,6 @@
   <title>Proyecto sportzone</title>
 </head>
 
-
 <body class="app sidebar-mini">
   <!-- Navbar-->
   <header class="app-header"><a class="app-header__logo" href="index.html">
@@ -88,8 +87,7 @@
             <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-gear me-2 fs-5"></i> Settings</a></li>
             <li><a class="dropdown-item" href="page-user.html"><i class="bi bi-person me-2 fs-5"></i> Profile</a></li>
             <li><a class="dropdown-item" href="page-login.html"><i class="bi bi-box-arrow-right me-2 fs-5"></i>
-                Logout</a>
-            </li>
+                Logout</a></li>
           </ul>
         </li>
       </ul>
@@ -101,13 +99,14 @@
       <div>
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
-          <li class="app-sidebar__user-designation breadcrumb-item"><a href="#">Inicio</a>
-          </li>
+          <li class="app-sidebar__user-designation breadcrumb-item"><a href="index.php?accion=inicio">Inicio</a></li>
 
       </div>
     </div>
     <ul class="app-menu">
-
+      <a href="{{ route('Gestion_usuario.principal') }}" class="btn btn-primary">
+        Ver Reportes
+      </a>
       <a class="app-menu__item" href="{{ route('Gestion_usuario.principal') }}"></i><span class="app-menu__label">Gestion de
           usuarios</span></a>
 
@@ -115,5 +114,4 @@
           empleados</span></a>
       <a class="app-menu__item" href="index.php?accion=reportes_admin"></i><span
           class="app-menu__label">Reportes</span></a>
-
   </aside>

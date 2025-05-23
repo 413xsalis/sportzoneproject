@@ -6,5 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/inicio', function () {
-    return view('admin.principal');
+    return view('Gestion_usuarios.principal');
 });
